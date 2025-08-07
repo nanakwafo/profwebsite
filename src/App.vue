@@ -9,30 +9,55 @@ import Education from './components/Education.vue'
 </script>
 
 <template>
+  <div class="layout">
     <Header />
-  
 
-  <main>
-    <About />
-    <Experience />
-    <Education />
-    
-    <Projects />
-    <Skills />
-    <Contact />
-  </main>
+    <main class="main-content">
+      <section id="about"><About /></section>
+      <section id="experience"><Experience /></section>
+      <section id="education"><Education /></section>
+      <section id="projects"><Projects /></section>
+      <section id="skills"><Skills /></section>
+      <section id="contact"><Contact /></section>
+    </main>
+  </div>
 </template>
 
 <style scoped>
-body {
+
+.layout {
   font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  background-color: #ffffff;
-  color: #333;
+  background-color: #f9f9f9;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-main {
-  max-width: 800px;
+
+.main-content {
+  /* max-width: 1000px; */
+  /* width: 100%; */
   margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+section {
+  background-color: #ffffff;
   padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  scroll-margin-top: 80px;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    padding: 3rem 2rem;
+  }
+  section {
+    padding: 3rem;
+  }
 }
 </style>

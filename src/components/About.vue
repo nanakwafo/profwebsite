@@ -1,26 +1,61 @@
 <template>
-  <section>
+  <section class="about">
     <h2>About Me</h2>
+
     <p>
-      I’m a results-driven DevOps and Site Reliability Engineer with deep expertise in AWS infrastructure, security compliance (including PCI DSS and SOC 2), and automation at scale. I specialize in architecting and operating secure, scalable cloud systems, while reducing complexity through smart tooling, Infrastructure as Code, and thorough documentation.
-</p>
-<br/>
-<p>
-With a strong foundation in CI/CD, container orchestration (ECS/EKS/Docker), and cloud security best practices, I build resilient systems that align with both business agility and compliance mandates.
-</p>
-<br/>
-<p>
-Additionally, I bring hands-on experience as a full-stack web developer, using Laravel and Vue.js to build intuitive, performant applications — allowing me to bridge the gap between infrastructure and application development teams.
-  </p>  
+      I am a <strong>results-driven Software Engineer</strong> with over <strong>8 years of industry experience</strong>, 
+      specializing in <strong>DevOps</strong>, <strong>Site Reliability Engineering</strong>, and 
+      <strong>full-stack web development</strong>. My core strengths lie in architecting <strong>secure, scalable cloud infrastructure</strong> 
+      on AWS, Azure, and Google Cloud, with deep expertise in <strong>automation</strong>, 
+      <em>Infrastructure as Code (IaC)</em>, and compliance frameworks such as <strong>PCI DSS</strong> and <strong>SOC 2</strong>.
+    </p>
+
+    <p>
+      With a solid foundation in <strong>CI/CD pipelines</strong>, container orchestration (ECS, EKS, Docker), 
+      and <strong>cloud security best practices</strong>, I build <strong>resilient systems</strong> that meet both agility and regulatory requirements. 
+      I simplify operations through <strong>smart tooling</strong>, automation at scale, and <em>well-maintained documentation</em>.
+    </p>
+
+    <p>
+      As an <strong>AWS-certified engineer</strong> with a <strong>BSc in Computer Science and Engineering</strong>, 
+      I bring hands-on experience as a <strong>full-stack web developer</strong> — delivering performant applications using <strong>Laravel</strong> and <strong>Vue.js</strong>. 
+      This hybrid skill set enables me to bridge the gap between <strong>infrastructure and application development teams</strong> effectively.
+    </p>
+
+    <p>
+      Throughout my career, I’ve contributed to <strong>large-scale delivery teams</strong>, implementing strategic initiatives, 
+      resolving client-facing challenges, and driving value through <strong>continuous process improvement</strong> and <strong>automation</strong>.
+    </p>
   </section>
 </template>
 
+
+
 <style scoped>
-section {
-  padding: 2rem;
+.about {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
-h2 {
-  border-bottom: 2px solid #ccc;
+
+.about h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+  border-bottom: 2px solid #eee;
   padding-bottom: 0.5rem;
+}
+
+.about strong {
+  color: #1a73e8;
+  font-weight: 600;
+}
+
+.about em {
+  font-style: italic;
+  color: #d63384;
 }
 </style>
