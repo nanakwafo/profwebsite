@@ -1,22 +1,89 @@
 <template>
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:nanamensah@example.com">nanamensah@example.com</a></p>
-    <p>Phone: +233 598 296 977</p>
-    <p>GitHub: <a href="https://github.com/nanamensah" target="_blank">github.com/nanamensah</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/nanamensah" target="_blank">linkedin.com/in/nanamensah</a></p>
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="skill-category" v-for="(category, index) in skillCategories" :key="index">
+      <h3>{{ category.name }}</h3>
+      <ul class="skill-tags">
+        <li v-for="(skill, i) in category.skills" :key="i">{{ skill }}</li>
+      </ul>
+    </div>
   </section>
 </template>
 
+<script setup>
+const skillCategories = [
+  {
+    name: "Cloud Platforms",
+    skills: ["AWS", "Azure", "Google Cloud", "EC2", "S3", "CloudWatch", "WAF", "ECS", "EKS"]
+  },
+  {
+    name: "DevOps & Automation",
+    skills: ["Docker", "Kubernetes", "Terraform", "GitHub Actions", "GitLab CI", "Jenkins", "Ansible"]
+  },
+  {
+    name: "Programming Languages",
+    skills: ["JavaScript", "PHP", "Python", "Bash", "Go"]
+  },
+  {
+    name: "Frameworks & Tools",
+    skills: ["Laravel", "Vue.js", "Node.js", "Apache Cordova", "Spring Boot"]
+  },
+  {
+    name: "Certifications",
+    skills: [
+      "AWS Certified Solutions Architect",
+      "AWS Cloud Practitioner",
+      "Docker Certified Associate",
+      "CKAD"
+    ]
+  }
+];
+</script>
+
 <style scoped>
-section {
+.skills {
   padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
-a {
-  color: #007BFF;
-  text-decoration: none;
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
 }
-a:hover {
-  text-decoration: underline;
+
+.skill-category {
+  margin-bottom: 1.8rem;
+}
+
+.skill-category h3 {
+  font-size: 1.2rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.skill-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-tags li {
+  background-color: #1a73e8;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.skill-tags li:hover {
+  background-color: #155ab6;
 }
 </style>

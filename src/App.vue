@@ -11,7 +11,6 @@ import Education from './components/Education.vue'
 <template>
   <div class="layout">
     <Header />
-
     <main class="main-content">
       <section id="about"><About /></section>
       <section id="experience"><Experience /></section>
