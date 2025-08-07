@@ -19,6 +19,21 @@
 <script setup>
 const jobs = [
   {
+    title: "DeVops Engineer",
+    company: "MojoPay",
+    location: "Ghana",
+    dates: "January 2022 – Present",
+    details: [
+      "Built custom web applications using Python, JavaScript, and Vue.js",
+      "Developed event-driven systems and performed web scraping with Python",
+      "Built WordPress templates and custom plugins",
+      "Integrated payment systems (Stripe, GoCardless) and third-party APIs (Algolia, Sage)",
+      "Set up and maintained CI/CD pipelines using Jenkins and GitLab CI",
+      "Managed AWS infrastructure (EC2, SQS, etc.) and containerized apps with Docker",
+      "Configured Linux web servers and deployed applications securely"
+    ]
+  },
+  {
     title: "Full Stack Software Engineer",
     company: "Pragmatic Digital",
     location: "Leeds, United Kingdom",
