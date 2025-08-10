@@ -6,6 +6,8 @@ import Projects from './components/Projects.vue'
 import Skills from './components/Skills.vue'
 import Contact from './components/Contact.vue'
 import Education from './components/Education.vue'
+
+import Achievement from './components/Achievement.vue'
 </script>
 
 <template>
@@ -13,6 +15,7 @@ import Education from './components/Education.vue'
     <Header />
     <main class="main-content">
       <section id="about"><About /></section>
+      <section id="achievement"><Achievement /></section>
       <section id="experience"><Experience /></section>
       <section id="education"><Education /></section>
       <section id="projects"><Projects /></section>
