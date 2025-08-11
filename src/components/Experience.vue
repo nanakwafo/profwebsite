@@ -166,13 +166,35 @@ const jobs = [
 h2 {
   font-size: 2.7rem;
   font-weight: 800;
-  color: #fff;
+  color: #2563eb;
   margin-bottom: 2.5rem;
   display: flex;
   align-items: center;
   gap: 1rem;
   letter-spacing: 0.03em;
   text-shadow: 0 2px 12px rgba(56,189,248,0.18);
+  position: relative;
+  z-index: 2;
+}
+h2::before {
+  content: "";
+  position: absolute;
+  left: -1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 3.5rem;
+  background: rgba(255,255,255,0.22);
+  filter: blur(8px);
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+h2 {
+  text-shadow:
+    0 2px 12px rgba(56,189,248,0.25),
+    0 0 0.5rem #fff,
+    0 0 1.5rem #2563eb;
 }
 
 .icon-briefcase {
