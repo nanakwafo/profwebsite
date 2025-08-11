@@ -215,7 +215,7 @@ h2 {
 
 @media (min-width: 700px) {
   .job-list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
