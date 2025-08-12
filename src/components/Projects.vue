@@ -12,9 +12,9 @@
 <script setup>
 const personalProjects = [
   {
-    title: "WhatsApp Shop AI Assistant",
+    title: "Urban WoodWork",
     description:
-      "A chatbot assistant that helps small businesses in Ghana sell products via WhatsApp. Built with Laravel + GPT."
+      "A creative woodworking and carpentry division of Urbanhire, specializing in crafting durable, functional, and aesthetically appealing wood products. From custom furniture and cabinetry to decorative wood pieces and construction-grade timber works, we blend traditional craftsmanship with modern design to deliver products that stand the test of time. Our mission is to bring warmth, style, and practicality into homes, businesses, and construction projects through quality wood solutions tailored to your needs."
   },
   {
     title: "Urbanhire Equipment Rentals",
